@@ -54,6 +54,9 @@ function selectGameField(e) {
   if (players[activePlayer].name.trim() < 1) {
     alert("pls enter valid user names");
     return;
+  } else if (activePlayerName.textContent === "PLAYER NAME") {
+    alert("click on start new game to play");
+    return;
   } else if (gameData[selectedRow][selectedColumn] > 0) {
     alert("please select an empty field");
     return;
