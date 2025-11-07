@@ -29,6 +29,23 @@ You can see the DEMO <a href="https://tic-tac-toe-jade-beta.vercel.app/" target=
 4. The game will show the winner or a draw.
 5. Click **"Start New Game"** again to reset.
 
-## Preview
+## Folder Structure
 
-![Project Preview Image](Preview.png)
+<img src="/FolderStructure.png" />
+
+## How to Run Locally
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/Altamash-khn/Tic-Tac-Toe.git
+   ```
+
+2. **Open the project folder**
+
+   ```bash
+   cd Tic-Tac-Toe
+   ```
+
+3. **Run the project**
+   - Simply open `index.html` in your browser.
