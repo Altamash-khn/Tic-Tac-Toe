@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="/Style/overlay.css" />
     <link rel="stylesheet" href="/Style/configuration.css" />
     <link rel="stylesheet" href="/Style/game.css" />
+    <link rel="stylesheet" href="/Style/responsive.css" />
     <script src="/Js/config.js" defer></script>
     <script src="/Js/game.js" defer></script>
     <script src="/Js/app.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
@@ -35,7 +36,9 @@
           </div>
           <p id="config-errors"></p>
           <div>
-            <button type="reset" class="btn btn-alt" id="cancel-config-btn">Cancel</button>
+            <button type="reset" class="btn btn-alt" id="cancel-config-btn">
+              Cancel
+            </button>
             <button type="submit" class="btn">Confirm</button>
           </div>
         </form>
@@ -48,7 +51,13 @@
               <h2>PLAYER 1</h2>
               <h3>PLAYER NAME</h3>
               <p class="player-symbol">X</p>
-              <button class="btn btn-alt" id="edit-player-1-btn" data-playerid="1">Edit</button>
+              <button
+                class="btn btn-alt"
+                id="edit-player-1-btn"
+                data-playerid="1"
+              >
+                Edit
+              </button>
             </article>
           </li>
           <li>
@@ -56,7 +65,13 @@
               <h2>PLAYER 2</h2>
               <h3>PLAYER NAME</h3>
               <p class="player-symbol">O</p>
-              <button class="btn btn-alt" id="edit-player-2-btn" data-playerid="2">Edit</button>
+              <button
+                class="btn btn-alt"
+                id="edit-player-2-btn"
+                data-playerid="2"
+              >
+                Edit
+              </button>
             </article>
           </li>
         </ol>
@@ -70,7 +85,7 @@
           <p>Click "Start New Game" above, to start a new game!</p>
         </article>
 
-        <p>It's your turn <span id="active-player-name">PLAYER NAME</span>!</p>
+        <p>It's your turn <span id="active-player-name">PLAYER NAME</span></p>
 
         <ol id="game-board">
           <li data-col="1" data-row="1"></li>

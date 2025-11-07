@@ -24,7 +24,7 @@ const playerConfigOverlayElement = document.getElementById("config-overlay");
 const backDropElement = document.getElementById("overlay");
 const formElement = document.querySelector("form");
 const activePlayerName = document.getElementById("active-player-name");
-const gameOverElement = document.getElementById("game-over" );
+const gameOverElement = document.getElementById("game-over");
 
 const editPlayer1BtnElement = document.getElementById("edit-player-1-btn");
 const editPlayer2BtnElement = document.getElementById("edit-player-2-btn");

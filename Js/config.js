@@ -15,15 +15,18 @@ function closePlayerConfig() {
 function savePlayerConfig(e) {
   e.preventDefault();
   const formData = new FormData(e.target);
+  console.log("save player config caled", formData.get("user-name"));
   const enteredPlayerName = formData.get("user-name").trim();
- 
+
   if (!enteredPlayerName) {
     e.target.firstElementChild.classList.add("error");
     errorOutputElement.textContent = "Please enter a valid name";
     return;
   }
 
-  const updatedPlayerDataElement = document.getElementById("player-" + editedPlayer + "-data");
+  const updatedPlayerDataElement = document.getElementById(
+    "player-" + editedPlayer + "-data"
+  );
   updatedPlayerDataElement.children[1].textContent = enteredPlayerName;
   players[editedPlayer - 1].name = enteredPlayerName;
   closePlayerConfig();

@@ -51,7 +51,10 @@ function selectGameField(e) {
   const selectedColumn = e.target.dataset.col - 1;
   const selectedRow = e.target.dataset.row - 1;
 
-  if (gameData[selectedRow][selectedColumn] > 0) {
+  if (players[activePlayer].name.trim() < 1) {
+    alert("pls enter valid user names");
+    return;
+  } else if (gameData[selectedRow][selectedColumn] > 0) {
     alert("please select an empty field");
     return;
   }
@@ -72,7 +75,7 @@ function selectGameField(e) {
       // if ((gameBoard[i].textContent = "")) {
       //   arr.push(gameBoard[i]);
       // }
-      }
+    }
     console.log(arr);
   }
 }
